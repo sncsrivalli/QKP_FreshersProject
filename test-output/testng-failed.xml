@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.Soft_Assert">
+      <class name="testScripts.CreateCourseTest">
         <methods>
-          <include name="demo"/>
+          <include name="classTeardown"/>
+          <include name="methodTeardown"/>
+          <include name="createCourseTest"/>
+          <include name="methodConfig"/>
+          <include name="classConfig"/>
         </methods>
-      </class> <!-- practice.Soft_Assert -->
+      </class> <!-- testScripts.CreateCourseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

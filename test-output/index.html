@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\jagua\AppData\Local\Temp\testng-eclipse--847192344\testng-customsuite.xml</span>
+                    <span>C:\Users\jagua\AppData\Local\Temp\testng-eclipse--1674492755\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="practice.Soft_Assert" class="method navigator-link" hash-for-method="demo">demo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testScripts.CreateCourseTest" class="method navigator-link" hash-for-method="createCourseTest">createCourseTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -122,19 +122,23 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">practice.Soft_Assert</span>
+              <span class="class-name">testScripts.CreateCourseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="demo">
-                  </a> <!-- demo -->
-                  <span class="method-name">demo</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [hello] but found [Hello]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at practice.Soft_Assert.demo(Soft_Assert.java:19)
+                  <a name="createCourseTest">
+                  </a> <!-- createCourseTest -->
+                  <span class="method-name">createCourseTest</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Automation
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
+	at genericUtilities.WebDriverUtility.selectAnOption(WebDriverUtility.java:108)
+	at objectRepo.CourseListPage.addCourse(CourseListPage.java:87)
+	at testScripts.CreateCourseTest.createCourseTest(CreateCourseTest.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,7 +176,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\jagua\AppData\Local\Temp\testng-eclipse--847192344\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\jagua\AppData\Local\Temp\testng-eclipse--1674492755\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -181,7 +185,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;practice.Soft_Assert&quot;/&gt;
+      &lt;class name=&quot;testScripts.CreateCourseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -223,14 +227,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'demo')
-data.setCell(0, 2, 'practice.Soft_Assert')
-data.setCell(0, 3, 13);
+data.setCell(0, 1, 'createCourseTest')
+data.setCell(0, 2, 'testScripts.CreateCourseTest')
+data.setCell(0, 3, 12271);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 13 ms</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -256,13 +260,31 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">practice.Soft_Assert</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testScripts.CreateCourseTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">classConfig</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">methodConfig</span>
+                <span class="method-start">3923 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">demo</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-name">createCourseTest</span>
+                <span class="method-start">15213 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">methodTeardown</span>
+                <span class="method-start">27510 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">classTeardown</span>
+                <span class="method-start">28659 ms</span>
+              </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

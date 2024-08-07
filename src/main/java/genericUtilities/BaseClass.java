@@ -1,6 +1,7 @@
 package genericUtilities;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -52,10 +53,12 @@ public class BaseClass {
 		users = new UsersPage(driver);
 		
 		web.navigateToApp(property.getDataFromProperties("url"));
+		
+		Assert.assertTrue(driver.getTitle().contains("SkillRary"));
 		login.setEmail(property.getDataFromProperties("username"));
 		login.setPassword(property.getDataFromProperties("password"));
 		login.clickLogin();
-		
+		Assert.assertTrue(driver.getCurrentUrl().contains("home"));
 		excel.excelInit(IConstantPath.EXCEL_PATH, "Sheet1");
 	}
 	
