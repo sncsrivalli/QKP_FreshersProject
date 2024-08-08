@@ -1,162 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-07T11:46:49 IST" name="Default suite" finished-at="2024-08-07T11:47:17 IST" duration-ms="28680">
+  <suite started-at="2024-08-08T12:59:50 IST" name="Suite" finished-at="2024-08-08T13:01:54 IST" duration-ms="124370">
     <groups>
     </groups>
-    <test started-at="2024-08-07T11:46:49 IST" name="Default test" finished-at="2024-08-07T11:47:17 IST" duration-ms="28680">
-      <class name="testScripts.CreateCourseTest">
-        <test-method is-config="true" signature="classConfig()[pri:0, instance:testScripts.CreateCourseTest@4f18837a]" started-at="2024-08-07T11:46:49 IST" name="classConfig" finished-at="2024-08-07T11:46:52 IST" duration-ms="3899" status="PASS">
+    <test started-at="2024-08-08T12:59:50 IST" name="Test Runner 1" finished-at="2024-08-08T13:01:34 IST" duration-ms="104497">
+      <class name="crossBrowserParallel.Test2">
+        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test2@4fb61f4a]" started-at="2024-08-08T12:59:50 IST" name="classSetUp" finished-at="2024-08-08T13:00:34 IST" duration-ms="43862" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- classConfig -->
-        <test-method is-config="true" signature="methodConfig()[pri:0, instance:testScripts.CreateCourseTest@4f18837a]" started-at="2024-08-07T11:46:52 IST" name="methodConfig" finished-at="2024-08-07T11:47:04 IST" duration-ms="11289" status="PASS">
+        </test-method> <!-- classSetUp -->
+        <test-method signature="swiggy()[pri:0, instance:crossBrowserParallel.Test2@4fb61f4a]" started-at="2024-08-08T13:00:34 IST" name="swiggy" finished-at="2024-08-08T13:00:44 IST" duration-ms="10546" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- methodConfig -->
-        <test-method signature="createCourseTest()[pri:0, instance:testScripts.CreateCourseTest@4f18837a]" started-at="2024-08-07T11:47:04 IST" name="createCourseTest" finished-at="2024-08-07T11:47:16 IST" duration-ms="12271" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Cannot locate option with text: Automation
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: driver.version: unknown]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Cannot locate option with text: Automation
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:153)
-at genericUtilities.WebDriverUtility.selectAnOption(WebDriverUtility.java:108)
-at objectRepo.CourseListPage.addCourse(CourseListPage.java:87)
-at testScripts.CreateCourseTest.createCourseTest(CreateCourseTest.java:22)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createCourseTest -->
-        <test-method is-config="true" signature="methodTeardown()[pri:0, instance:testScripts.CreateCourseTest@4f18837a]" started-at="2024-08-07T11:47:16 IST" name="methodTeardown" finished-at="2024-08-07T11:47:17 IST" duration-ms="1140" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <span class="hidden-xs">...</span> is not clickable at point (1538, 25). Other element would receive the click: <div class="modal fade in" id="addnew" style="display: block;">...</div>
-  (Session info: chrome=127.0.6533.90)
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [118774714908a7539daafceeac14a5d6, clickElement {id=f.C85D834AF83DBA8AD32B2F2665C31A17.d.E36AF93F8AEBC5588455A16014B3C243.e.190}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.90, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\jagua\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51923}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51923/devtoo..., se:cdpVersion: 127.0.6533.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (118774714908a7539daafceeac14a5d6)] -> xpath: //span[text()='SkillRary Admin']]
-Session ID: 118774714908a7539daafceeac14a5d6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="hidden-xs">...</span> is not clickable at point (1538, 25). Other element would receive the click: <div class="modal fade in" id="addnew" style="display: block;">...</div>
-  (Session info: chrome=127.0.6533.90)
-Build info: version: '4.22.0', revision: 'c5f3146703*'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [118774714908a7539daafceeac14a5d6, clickElement {id=f.C85D834AF83DBA8AD32B2F2665C31A17.d.E36AF93F8AEBC5588455A16014B3C243.e.190}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.90, chrome: {chromedriverVersion: 127.0.6533.99 (f31af5097d90..., userDataDir: C:\Users\jagua\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51923}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51923/devtoo..., se:cdpVersion: 127.0.6533.90, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (118774714908a7539daafceeac14a5d6)] -> xpath: //span[text()='SkillRary Admin']]
-Session ID: 118774714908a7539daafceeac14a5d6
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at objectRepo.HomePage.signOutOfSkillrary(HomePage.java:49)
-at genericUtilities.BaseClass.methodTeardown(BaseClass.java:67)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
-at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- methodTeardown -->
-        <test-method is-config="true" signature="classTeardown()[pri:0, instance:testScripts.CreateCourseTest@4f18837a]" started-at="2024-08-07T11:47:17 IST" name="classTeardown" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1723011437722" status="SKIP">
+        </test-method> <!-- swiggy -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test2@4fb61f4a]" started-at="2024-08-08T13:00:45 IST" name="classTeardown" finished-at="2024-08-08T13:00:49 IST" duration-ms="3999" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTeardown -->
-      </class> <!-- testScripts.CreateCourseTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- crossBrowserParallel.Test2 -->
+      <class name="crossBrowserParallel.Test1">
+        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test1@9f116cc]" started-at="2024-08-08T13:00:49 IST" name="classSetUp" finished-at="2024-08-08T13:01:31 IST" duration-ms="42239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="google()[pri:0, instance:crossBrowserParallel.Test1@9f116cc]" started-at="2024-08-08T13:01:31 IST" name="google" finished-at="2024-08-08T13:01:31 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test1@9f116cc]" started-at="2024-08-08T13:01:31 IST" name="classTeardown" finished-at="2024-08-08T13:01:34 IST" duration-ms="3152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTeardown -->
+      </class> <!-- crossBrowserParallel.Test1 -->
+    </test> <!-- Test Runner 1 -->
+    <test started-at="2024-08-08T12:59:50 IST" name="Test Runner 2" finished-at="2024-08-08T13:01:54 IST" duration-ms="124370">
+      <class name="crossBrowserParallel.Test2">
+        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test2@72967906]" started-at="2024-08-08T12:59:50 IST" name="classSetUp" finished-at="2024-08-08T13:01:03 IST" duration-ms="72903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="swiggy()[pri:0, instance:crossBrowserParallel.Test2@72967906]" started-at="2024-08-08T13:01:03 IST" name="swiggy" finished-at="2024-08-08T13:01:39 IST" duration-ms="36261" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- swiggy -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test2@72967906]" started-at="2024-08-08T13:01:39 IST" name="classTeardown" finished-at="2024-08-08T13:01:41 IST" duration-ms="2038" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTeardown -->
+      </class> <!-- crossBrowserParallel.Test2 -->
+      <class name="crossBrowserParallel.Test1">
+        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test1@5b8dfcc1]" started-at="2024-08-08T13:01:41 IST" name="classSetUp" finished-at="2024-08-08T13:01:47 IST" duration-ms="5585" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classSetUp -->
+        <test-method signature="google()[pri:0, instance:crossBrowserParallel.Test1@5b8dfcc1]" started-at="2024-08-08T13:01:47 IST" name="google" finished-at="2024-08-08T13:01:53 IST" duration-ms="6006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- google -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test1@5b8dfcc1]" started-at="2024-08-08T13:01:53 IST" name="classTeardown" finished-at="2024-08-08T13:01:54 IST" duration-ms="1558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- classTeardown -->
+      </class> <!-- crossBrowserParallel.Test1 -->
+    </test> <!-- Test Runner 2 -->
+  </suite> <!-- Suite -->
 </testng-results>
