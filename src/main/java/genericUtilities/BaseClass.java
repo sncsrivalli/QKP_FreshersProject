@@ -7,6 +7,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 
+import objectRepo.CategoryPage;
 import objectRepo.CourseListPage;
 import objectRepo.HomePage;
 import objectRepo.LoginPage;
@@ -28,6 +29,7 @@ public class BaseClass {
 	protected HomePage home;
 	protected CourseListPage course;
 	protected UsersPage users;
+	protected CategoryPage category;
 	
 	@BeforeClass
 	public void classConfig() {
@@ -51,6 +53,7 @@ public class BaseClass {
 		home = new HomePage(driver);
 		course = new CourseListPage(driver);
 		users = new UsersPage(driver);
+		category = new CategoryPage(driver);
 		
 		web.navigateToApp(property.getDataFromProperties("url"));
 		

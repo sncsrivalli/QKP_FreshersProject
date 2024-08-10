@@ -1,97 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-08T12:59:50 IST" name="Suite" finished-at="2024-08-08T13:01:54 IST" duration-ms="124370">
+  <suite started-at="2024-08-10T12:16:03 IST" name="Default suite" finished-at="2024-08-10T12:16:29 IST" duration-ms="26307">
     <groups>
     </groups>
-    <test started-at="2024-08-08T12:59:50 IST" name="Test Runner 1" finished-at="2024-08-08T13:01:34 IST" duration-ms="104497">
-      <class name="crossBrowserParallel.Test2">
-        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test2@4fb61f4a]" started-at="2024-08-08T12:59:50 IST" name="classSetUp" finished-at="2024-08-08T13:00:34 IST" duration-ms="43862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-08-10T12:16:03 IST" name="Default test" finished-at="2024-08-10T12:16:29 IST" duration-ms="26307">
+      <class name="testScripts.CreateCategoryTest">
+        <test-method is-config="true" signature="classConfig()[pri:0, instance:testScripts.CreateCategoryTest@4f18837a]" started-at="2024-08-10T12:16:03 IST" name="classConfig" finished-at="2024-08-10T12:16:10 IST" duration-ms="7248" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- classSetUp -->
-        <test-method signature="swiggy()[pri:0, instance:crossBrowserParallel.Test2@4fb61f4a]" started-at="2024-08-08T13:00:34 IST" name="swiggy" finished-at="2024-08-08T13:00:44 IST" duration-ms="10546" status="PASS">
+        </test-method> <!-- classConfig -->
+        <test-method is-config="true" signature="methodConfig()[pri:0, instance:testScripts.CreateCategoryTest@4f18837a]" started-at="2024-08-10T12:16:10 IST" name="methodConfig" finished-at="2024-08-10T12:16:21 IST" duration-ms="11276" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- swiggy -->
-        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test2@4fb61f4a]" started-at="2024-08-08T13:00:45 IST" name="classTeardown" finished-at="2024-08-08T13:00:49 IST" duration-ms="3999" status="PASS">
+        </test-method> <!-- methodConfig -->
+        <test-method signature="addCategoryTest()[pri:0, instance:testScripts.CreateCategoryTest@4f18837a]" started-at="2024-08-10T12:16:21 IST" name="addCategoryTest" finished-at="2024-08-10T12:16:25 IST" duration-ms="3837" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- classTeardown -->
-      </class> <!-- crossBrowserParallel.Test2 -->
-      <class name="crossBrowserParallel.Test1">
-        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test1@9f116cc]" started-at="2024-08-08T13:00:49 IST" name="classSetUp" finished-at="2024-08-08T13:01:31 IST" duration-ms="42239" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- addCategoryTest -->
+        <test-method is-config="true" signature="methodTeardown()[pri:0, instance:testScripts.CreateCategoryTest@4f18837a]" started-at="2024-08-10T12:16:25 IST" name="methodTeardown" finished-at="2024-08-10T12:16:28 IST" duration-ms="3007" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- classSetUp -->
-        <test-method signature="google()[pri:0, instance:crossBrowserParallel.Test1@9f116cc]" started-at="2024-08-08T13:01:31 IST" name="google" finished-at="2024-08-08T13:01:31 IST" duration-ms="462" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- google -->
-        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test1@9f116cc]" started-at="2024-08-08T13:01:31 IST" name="classTeardown" finished-at="2024-08-08T13:01:34 IST" duration-ms="3152" status="PASS">
+        </test-method> <!-- methodTeardown -->
+        <test-method is-config="true" signature="classTeardown()[pri:0, instance:testScripts.CreateCategoryTest@4f18837a]" started-at="2024-08-10T12:16:28 IST" name="classTeardown" finished-at="2024-08-10T12:16:29 IST" duration-ms="886" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- classTeardown -->
-      </class> <!-- crossBrowserParallel.Test1 -->
-    </test> <!-- Test Runner 1 -->
-    <test started-at="2024-08-08T12:59:50 IST" name="Test Runner 2" finished-at="2024-08-08T13:01:54 IST" duration-ms="124370">
-      <class name="crossBrowserParallel.Test2">
-        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test2@72967906]" started-at="2024-08-08T12:59:50 IST" name="classSetUp" finished-at="2024-08-08T13:01:03 IST" duration-ms="72903" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classSetUp -->
-        <test-method signature="swiggy()[pri:0, instance:crossBrowserParallel.Test2@72967906]" started-at="2024-08-08T13:01:03 IST" name="swiggy" finished-at="2024-08-08T13:01:39 IST" duration-ms="36261" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- swiggy -->
-        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test2@72967906]" started-at="2024-08-08T13:01:39 IST" name="classTeardown" finished-at="2024-08-08T13:01:41 IST" duration-ms="2038" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classTeardown -->
-      </class> <!-- crossBrowserParallel.Test2 -->
-      <class name="crossBrowserParallel.Test1">
-        <test-method is-config="true" signature="classSetUp(java.lang.String)[pri:0, instance:crossBrowserParallel.Test1@5b8dfcc1]" started-at="2024-08-08T13:01:41 IST" name="classSetUp" finished-at="2024-08-08T13:01:47 IST" duration-ms="5585" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classSetUp -->
-        <test-method signature="google()[pri:0, instance:crossBrowserParallel.Test1@5b8dfcc1]" started-at="2024-08-08T13:01:47 IST" name="google" finished-at="2024-08-08T13:01:53 IST" duration-ms="6006" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- google -->
-        <test-method is-config="true" signature="classTeardown()[pri:0, instance:crossBrowserParallel.Test1@5b8dfcc1]" started-at="2024-08-08T13:01:53 IST" name="classTeardown" finished-at="2024-08-08T13:01:54 IST" duration-ms="1558" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- classTeardown -->
-      </class> <!-- crossBrowserParallel.Test1 -->
-    </test> <!-- Test Runner 2 -->
-  </suite> <!-- Suite -->
+      </class> <!-- testScripts.CreateCategoryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

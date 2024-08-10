@@ -1,7 +1,5 @@
 package objectRepo;
 
-import java.util.Map;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -39,6 +37,9 @@ public class UsersPage {
 	@FindBy(xpath = "//button[@name='add']")
 	private WebElement saveBTN;
 	
+	@FindBy(xpath = "//div[contains(@class,'alert')]")
+	private WebElement alert;
+	
 	public UsersPage(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}
@@ -51,14 +52,18 @@ public class UsersPage {
 		newBTN.click();
 	}
 	
-	public void createUser(Map<String, String> map) {
-		emailTF.sendKeys(map.get("Email"));
-		passwordTF.sendKeys(map.get("Password"));
-		firstnameTF.sendKeys(map.get("Firstname"));
-		lastnameTF.sendKeys(map.get("Lastname"));
-		addressTextArea.sendKeys(map.get("Address"));
-		contactTF.sendKeys(map.get("Contact Info"));
-		chooseFile.sendKeys(map.get("Photo"));
+	public void createUser(String email, String pwd, String firstName, String lastName, String address, String contact, String photo) {
+		emailTF.sendKeys(email);
+		passwordTF.sendKeys(pwd);
+		firstnameTF.sendKeys(firstName);
+		lastnameTF.sendKeys(lastName);
+		addressTextArea.sendKeys(address);
+		contactTF.sendKeys(contact);
+		chooseFile.sendKeys(photo);
 		saveBTN.click();
+	}
+	
+	public String getAlertMessage() {
+		return alert.getText();
 	}
 }
